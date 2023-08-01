@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p id="pera"></p>
+
+    <div id="main">
+        <button>click me</button>
+    </div>
+
+
+    <script>
+        const questions = [
+
+            {
+                question: "What is The Value of 2+2 ?"
+            },
+            {
+                question:  "What is The Value of 2+2+2 ?"
+            },
+            {
+                question:  "What is The Value of 2+2+2+2 ?"
+            },
+            {
+                question:  "What is The Value of 2+2+2+2+2 ?"
+            }
+
+
+        ]
+
+        // console.log(questions)
+
+        let div = document.getElementById("main");
+        let btn = document.querySelector("button");
+        let pera=document.getElementById("pera")
+
+        let x;
+        btn.onclick = () => {
+
+            pera.innerHTML = questions[y].question
+            x = setInterval(skm, 2000)
+
+        }
+
+        let y = 0;
+        function skm() {
+            // let p = document.createElement("p");
+            // div.appendChild(p)
+            pera.innerHTML = questions[y].question
+            y=y+1;
+
+            if (y == 4) {
+                clearInterval(x)
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
+    
+</body>
+</html>
